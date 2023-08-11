@@ -1,12 +1,13 @@
 #include <stdio.h>
 /**
  * main - entry point,prints lowercase alphabets
- * return: 0 always for success
+ * Return: 0 always for success
 */
 int main(void)
 {
 	char c = 97;
-	while((c > 96) && (c < 122))
+
+	while ((c > 96) && (c < 123))
 	{
 		putchar(c);
 		c++;

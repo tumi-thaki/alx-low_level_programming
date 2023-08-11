@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 /**
  * main - entry point,print the last digit stored in n
  * Return: 0 foe success always
@@ -17,7 +18,7 @@ int main(void)
 		printf("and is greater than 5\n");
 	if (num == 0)
 		printf("and is 0\n");
-	if ((num < 6) && (num >0))
+	if ((num < 6) && (num > 0))
 		printf("and is less than 6 and not 0\n");
 	return (0);
 }

@@ -5,7 +5,8 @@
 */
 int main(void)
 {
-	char c = 122;
+	char c = 122
+		;
 	while (c > 96)
 	{
 		putchar(c);
