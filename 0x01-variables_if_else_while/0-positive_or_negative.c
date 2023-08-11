@@ -20,6 +20,6 @@ int main(void)
 		puts("is zero");
 	if (n < 0)
 		puts("is negative");
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
