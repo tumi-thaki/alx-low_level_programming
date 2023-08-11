@@ -10,10 +10,12 @@ int main(void)
 	while (num < 9)
 	{
 		putchar(num + '0');
-		putchar(',');
-		putchar(' ');
+		if (num != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		num++;
 	}
-	putchar('9');
 	return (0);
 }
