@@ -15,10 +15,11 @@ int main(void)
 	printf("%d ", n);
 
 	if (n > 0)
-		puts("is positive\n");
+		puts("is positive");
 	if (n == 0)
-		puts("is zero\n");
+		puts("is zero");
 	if (n < 0)
-		puts("is negative\n");
+		puts("is negative");
+	putchar('\n')
 	return (0);
 }
