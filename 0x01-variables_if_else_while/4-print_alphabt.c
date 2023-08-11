@@ -14,7 +14,7 @@ int main(void)
 		}
 		else if (c == 113)
 		{
-			c++
+			c++;
 		}
 		else
 		{
