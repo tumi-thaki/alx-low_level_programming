@@ -6,6 +6,7 @@
 int main(void)
 {
 	char c = 97;
+
 	while (c < 123)
 	{
 		if (c == 101)
