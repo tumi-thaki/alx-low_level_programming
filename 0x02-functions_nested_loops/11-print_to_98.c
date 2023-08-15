@@ -3,7 +3,7 @@
 
 /**
  * print_to_98 - prints numbers from input n to 9
- * @n - argument to start counting from
+ * @n: argument to start counting from
  * Return: nothing void
  *
 */
@@ -19,7 +19,7 @@ void print_to_98(int n)
 	}
 	else if (n == 98)
 	{
-		printf(98);
+		printf("98");
 	}
 	else
 	{
