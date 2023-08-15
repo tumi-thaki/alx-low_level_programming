@@ -2,7 +2,7 @@
 
 /**
  * times_table - prints the times table
- * Return: nothing, voi
+ * Return: nothing, void
 */
 
 void times_table(void)
@@ -28,5 +28,6 @@ void times_table(void)
 				_putchar((product % 10) + '0');
 			}
 		}
+		_putchar('\n');
 	}
 }
