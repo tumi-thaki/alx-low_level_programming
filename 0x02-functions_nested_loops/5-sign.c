@@ -2,7 +2,7 @@
 
 /**
  * print_sign - print the sign of a number
- * @n - number to be checked to sign
+ * @n: number to be checked to sign
  * Return: 1 if its positive, 0 for zero and -2 for negative numbers
 */
 
