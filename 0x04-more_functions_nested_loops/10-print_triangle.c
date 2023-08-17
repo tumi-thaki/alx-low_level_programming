@@ -11,16 +11,17 @@ void print_triangle(int size)
 {
 	int i, j, k, space, hash;
 
-	if (n > 0)
+	if (size > 0)
 	{
 		for (i = 0; i < size; i++)
 		{
 			space = size - (i + 1);
 			hash = i + 1;
-			for (j = 0;j < space;j++)
+			for (j = 0; j < space; j++)
 				_putchar(' ');
 			for (k = 0; k < hash; k++)
 				_putchar('#');
+			_putchar('\n');
 		}
 	}
 	_putchar('\n');

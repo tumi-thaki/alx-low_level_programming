@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	long long int i, j, largestPrFact = 0, factor;	
+	unsigned long int i, j, largestPrFact = 0, fact;	
 
 	for (i = 0; i <= 612852475143; i++)
 	{
@@ -25,5 +25,6 @@ int main(void)
 			}
 		}
 	}
-	printf("%lld\n", largestPrFact);
+	printf("%ld\n", largestPrFact);
+	return (0);
 }
