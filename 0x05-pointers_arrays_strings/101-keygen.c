@@ -10,17 +10,41 @@
 
 int main(void)
 {
-	int num, total;
+	int pass[100];
 
-	srand(time(0));
-	while (total < 2772)
-	{
-		num = rand() % 128;
-		if ((total + num) > 2772)
-			break;
-		printf("%d\n", num);
-		total += num;
-	}
-	printf("%d\n", total - num);
-	return (0);
+        int i, sum, n;
+
+
+        sum = 0;
+
+
+        srand(time(NULL));
+
+
+        for (i = 0; i < 100; i++)
+
+        {
+
+                pass[i] = rand() % 78;
+
+                sum += (pass[i] + '0');
+
+                putchar(pass[i] + '0');
+
+                if ((2772 - sum) - '0' < 78)
+
+                {
+
+                        n = 2772 - sum - '0';
+
+                        sum += n;
+
+                        putchar(n + '0');
+
+                        break;
+
+                }
+
+        }
+
 }
