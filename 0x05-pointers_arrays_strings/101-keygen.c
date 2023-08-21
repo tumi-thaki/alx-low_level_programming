@@ -12,7 +12,7 @@ int main(void)
 {
 	int num, count , total;
 
-	srand(time(NULL));
+	srand(time(0));
 	for (count = 0, total = 2772; total > 122; count++)
 	{
 		num = rand() % 125;
