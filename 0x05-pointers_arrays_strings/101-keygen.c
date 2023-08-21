@@ -10,15 +10,17 @@
 
 int main(void)
 {
-	int num, count , total;
+	int num, total;
 
 	srand(time(0));
-	for (count = 0, total = 2772; total > 122; count++)
+	while (total < 2772)
 	{
-		num = rand() % 125;
+		num = rand() % 128;
+		if ((total + num) > 2772)
+			break;
 		printf("%d\n", num);
-		total -= num;
+		total += num;
 	}
-	printf("%d\n", total);
+	printf("%d\n", total - num);
 	return (0);
 }
