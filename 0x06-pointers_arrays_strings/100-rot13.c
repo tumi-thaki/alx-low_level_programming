@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * rot13 - a string using rot13, each character rotates 13 places.
+ * rot13 - a string using rot13, each character rotates 13 places
  * @s: string to be encoded
  * Return: pointrt to string
  *

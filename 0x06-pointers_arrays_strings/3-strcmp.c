@@ -4,9 +4,7 @@
  * _strcmp - compares two string
  * @s1: argument, string to be compared
  * @s2: argument, string to be compared
- * Return: 0 if the strings are the same
- * 	a negative integer if the stopping charaacter in s1 is less than that of s2
- * 	a positive integer if the stopping character in s1 is greater than that of s2
+ * Return: 0 for identical strings a negative or positive integer otherwise
  *
 */
 

@@ -2,7 +2,7 @@
 
 /**
  * leet - that encodes a string into 1337.
- * @s: argument, string to be converted 
+ * @s: argument, string to be converted
  * Return: pointer to string
  *
 */
