@@ -8,14 +8,15 @@
  * @argv: argument vector
  * Return: 1 for error, 0 for success
  *
-*/ 
-  
-int main(int argc, char *argv[]) 
+*/
+
+int main(int argc, char *argv[])
 {
 	int principle, total, change, file;
 	int coins[] = {25, 10, 5, 2, 1};
-	
+
 	principle = total = change = file = 0;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
