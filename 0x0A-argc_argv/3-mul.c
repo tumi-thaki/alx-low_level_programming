@@ -3,6 +3,8 @@
 
 /**
  * main - entry point
+ * @argc: argument count
+ * @argvb argument pointer
  * Return: 0 for success, 1 for error
  *
 */

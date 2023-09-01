@@ -3,6 +3,8 @@
 
 /**
  * main - entry point
+ * @argc: argument count
+ * @argv: argument storage
  * Return: 1 for error, 0 for success
  *
 */
@@ -28,7 +30,7 @@ int main(int argc, char **argv)
 			}
 			
 			
-			result += strtol(&argv[i]);
+			result += atoi(argv[i]);
 		}
 	}
 
