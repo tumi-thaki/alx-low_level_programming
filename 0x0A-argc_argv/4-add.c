@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 		return (0);
 	}
 
-	for (i = 1; i < (argc - 1); i++)
+	for (i = 1; i <= (argc - 1); i++)
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
@@ -28,10 +28,9 @@ int main(int argc, char **argv)
 				printf("Error\n");
 				return (1);
 			}
-			
-			
-			result += atoi(argv[i]);
 		}
+
+		result += atoi(argv[i]);
 	}
 
 	printf ("%d\n", result);
