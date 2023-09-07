@@ -2,7 +2,7 @@
 
 /**
  * malloc_checked - allocates memory using malloc
- * @b: argument
+ * @b: argument, size
  * Return: nothing
  *
 */
@@ -12,8 +12,8 @@ void *malloc_checked(unsigned int b)
 	void *a;
 
 	a = malloc(b);
-	
-	if(a == NULL)
+
+	if (a == NULL)
 		exit(98);
 
 	return (a);

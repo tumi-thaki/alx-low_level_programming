@@ -22,18 +22,19 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 
 	if (new_size == old_size)
 		return (ptr);
-	
+
 	a = malloc(new_size);
 
 	if (a == NULL)
 		return (NULL);
 
 	if (ptr == NULL)
-		 return (a);
+		return (a);
+
 	tmp = ptr;
 	for (i = 0; i < new_size; i++)
 		a[i] = tmp[i];
-	
+
 	free(ptr);
 	return (a);
 }
