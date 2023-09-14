@@ -1,69 +1,32 @@
-/** 
-  * op_add - adds @a and @b 
-  * 
-  * @a: input 1 
-  * @b: input 2 
-  * 
-  * Return: sum of @a and @b 
- */ 
-  
- int op_add(int a, int b) 
- { 
-         return (a + b); 
- } 
-  
-  
- /** 
-  * op_sub - gets the difference of @a and @b 
-  * 
-  * @a: input 1 
-  * @b: input 2 
-  * 
-  * Return: difference of @a and @b 
- */ 
- int op_sub(int a, int b) 
- { 
-         return (a - b); 
- } 
-  
-  
- /** 
-  * op_mul - multiplies @a and @b 
-  * 
-  * @a: input 1 
-  * @b: input 2 
-  * 
-  * Return: product of @a and @b 
- */ 
- int op_mul(int a, int b) 
- { 
-         return (a * b); 
- } 
-  
-  
- /** 
-  * op_div - divides @a by @b 
-  * 
-  * @a: input 1 
-  * @b: input 2 
-  * 
-  * Return: results of the division @a and @b 
- */ 
- int op_div(int a, int b) 
- { 
-         return (a / b); 
- } 
-  
-  
- /** 
-  * op_mod - gets the reminder of the division between @a and @b 
-  * 
-  * @a: input 1 
-  * @b: input 2 
-  * 
-  * Return: the remainder 
- */ 
- int op_mod(int a, int b) 
- { 
-         return (a % b); 
- }
+#include "3-calc.h"
+
+/**
+ * get_op_func - selects the correct function to perform the operation
+ * @s: argument
+ * Return: A pointer to the function that corresponds to the operator,
+ *         or NULL if the operator is not found
+*/
+
+int (*get_op_func(char *s))(int, int)
+{
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+	};
+	
+	int i = 0;
+
+	while (ops[i].op != NULL)
+	{
+		if (*(ops[i].op) == *s)
+			return (ops[i].f);
+		i++;
+	}
+
+	return (NULL);
+}
+

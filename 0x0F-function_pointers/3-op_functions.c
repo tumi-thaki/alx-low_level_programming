@@ -1,5 +1,5 @@
 /** 
-  * op_add - adds @a and @b 
+  * op_add - adds @a and @b
   * 
   * @a: input 1 
   * @b: input 2 
